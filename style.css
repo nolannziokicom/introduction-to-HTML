@@ -1,0 +1,30 @@
+*{
+font-size: 30px;
+font-weight: 200;
+
+}
+h3{
+color: aqua;
+}
+h4{
+
+    color: rgb(47, 0, 255);
+}
+ .myclass{
+
+    color: blueviolet;
+ }
+#myid{
+
+color: azure;
+}
+
+h5,p{
+
+    color: crimson;
+}
+
+
+
+
+
