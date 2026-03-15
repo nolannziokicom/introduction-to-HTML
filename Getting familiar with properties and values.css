@@ -1,0 +1,22 @@
+*{
+ font-size: larger; 
+ font-weight: 500;  
+}
+h2{
+    color: chocolate;
+}
+h4{
+
+    color: rgb(80, 255, 156);
+}
+.myclass{
+
+    color: blue;
+}
+#myid{
+    color: crimson;
+
+}
+ h6{
+    color: rgb(105, 105, 105);
+ }
