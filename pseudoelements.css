@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(232, 255, 80);
+    color: crimson;
+}
+h1{
+    color: rgb(218, 32, 106);
+}
+a {
+color: rgb(0, 130, 124);
+text-decoration: dotted;
+}
+a:hover{
+    color: cyan;
+}
+ul>li {
+    font-weight: lighter;
+
+}
+h1+p{
+    background-color: rgba(105, 105, 105, 0.518);
+    padding: 20px;
+    border-radius: 10px;
+}
+ul li:hover{
+color : rgba(255, 234, 0, 0.311);
+}
+ ul li:nth-child(4){
+    background-color: white;
+
+ }
+ p:not(:first-of-type){
+    text-decoration: underline;
+ }
+ ul li::before{
+    content: 🌌;
+ }
+ p:of ::first-letter {
+    font-size: medium;
+    color: darkcyan;
+    font-weight: bolder;
+ }
+ 
