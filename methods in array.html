@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript array methods</h2>
+        <h3>Join() and pop()</h3>
+        <p>The join() method joins array elemnets into a string and the pop() method removes the last elemnt from an array</p>
+        <p id="myjoin"></p>
+        <p id="myfirstpop"></p>
+        <p id="mysecondpop"></p>
+
+        <script>
+            var animals= ['Dog','bear','blobfish','salmon','duck-billed platypus'];
+            document.getElementById("myjoin").innerHTML= animals.join("*");
+            document.getElementById("myfirstpop").innerHTML= animals; animals.pop();
+            document.getElementById("mysecondpop").innerHTML= animals;
+        </script>
+    </body>
+</html>
