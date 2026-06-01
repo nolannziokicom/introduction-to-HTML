@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>My Planet Cards</title>
+
+    <style>
+        body {
+
+            font-family: Arial;
+
+            background: #f0f4ff;
+
+            padding: 30px;
+
+            text-align: center;
+
+        }
+
+        h1 {
+
+            color: #ff5a43;
+
+        }
+
+        p {
+
+            color: #555;
+
+        }
+
+        .cards {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 20px;
+
+            margin-top: 25px;
+
+        }
+
+        .card {
+
+            background: white;
+
+            border: 3px solid #ff5a43;
+
+            border-radius: 12px;
+
+            padding: 20px;
+
+            width: 200px;
+
+        }
+
+        .animal-name {
+
+            font-size: 22px;
+
+            font-weight: bold;
+
+            color: #333;
+
+        }
+
+        .animal-fact {
+
+            color: #666;
+
+            margin-top: 10px;
+
+            font-size: 14px;
+
+        }
+
+        button {
+
+            background: #ff5a43;
+
+            color: white;
+
+            border: none;
+
+            padding: 12px 28px;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            margin-top: 10px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>My animal cards</h1>
+    <p>Use a Javascript class to build animal cards</p>
+    <button onclick="showanimals()">Show animals</button>
+    <div class="cards">
+    <div class="card1"></div>
+    <div class="card2"></div>
+    <div class="card3"></div>
+    </div>
+    <script>
+        class animal {
+            constructor(name,fact) {
+            this.name = name;
+            this.fact = fact;
+            }
+            
+                describe() {
+                    return this.name + ":" + this.fact;
+                }
+            }
+        function showanimals(){
+            let p1 = new animal("Octopus", "Did u know that an octopus has 3 hearts")
+            let p2= new animal("duck-billed platypus","Did you know that im one of the two mammals that lay eggs instead of giving birth")
+            let p3 =new animal("Grizzly bear","Did you know that im not only brown but in rare cases white")
+
+        document.getElementById("card1").innerHTML ="<div class='cards'> <div class='animal-name'>" + p1.name + "</div>" + "<div class='animal-fact'>" + p1.describe() + "</div></div>";
+        document.getElementById("card2").innerHTML= "<div class='cards'> <div class='animal-name'>" + p2.name + "</div>" + "<div class='animal-fact'>" + p2.describe() + "</div></div>";
+        }
+        document.getElementById("card3").innerHTML = "<div class='cards'> <div class='animal-name'>" + p3.name + "</div>" + "<div class='animal-fact'>" + p3.describe() + "</div></div>";
+    </script>
+</body>
+</html>
