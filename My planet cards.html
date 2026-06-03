@@ -105,9 +105,9 @@
     <p>Use a Javascript class to build animal cards</p>
     <button onclick="showanimals()">Show animals</button>
     <div class="cards">
-    <div class="card1"></div>
-    <div class="card2"></div>
-    <div class="card3"></div>
+    <div id="card1"></div>
+    <div id="card2"></div>
+    <div id="card3"></div>
     </div>
     <script>
         class animal {
@@ -117,18 +117,17 @@
             }
             
                 describe() {
-                    return this.name + ":" + this.fact;
+                    return this.name + ": " + this.fact;
                 }
             }
         function showanimals(){
             let p1 = new animal("Octopus", "Did u know that an octopus has 3 hearts")
             let p2= new animal("duck-billed platypus","Did you know that im one of the two mammals that lay eggs instead of giving birth")
             let p3 =new animal("Grizzly bear","Did you know that im not only brown but in rare cases white")
-
-        document.getElementById("card1").innerHTML ="<div class='cards'> <div class='animal-name'>" + p1.name + "</div>" + "<div class='animal-fact'>" + p1.describe() + "</div></div>";
-        document.getElementById("card2").innerHTML= "<div class='cards'> <div class='animal-name'>" + p2.name + "</div>" + "<div class='animal-fact'>" + p2.describe() + "</div></div>";
+            document.getElementById("card1").innerHTML ="<div class='card'> <div class='animal-name'>" + p1.name + "</div>" + "<div class='animal-fact'>" + p1.describe() + "</div></div>";
+            document.getElementById("card2").innerHTML= "<div class='card'> <div class='animal-name'>" + p2.name + "</div>" + "<div class='animal-fact'>" + p2.describe() + "</div></div>";
+            document.getElementById("card3").innerHTML = "<div class='card'> <div class='animal-name'>" + p3.name + "</div>" + "<div class='animal-fact'>" + p3.describe() + "</div></div>";
         }
-        document.getElementById("card3").innerHTML = "<div class='cards'> <div class='animal-name'>" + p3.name + "</div>" + "<div class='animal-fact'>" + p3.describe() + "</div></div>";
     </script>
 </body>
 </html>
