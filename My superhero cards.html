@@ -104,9 +104,9 @@
     <p>Using Javascript to make superhero cards</p>
     <button onclick="showheros()">Show heros</button>
     <div class="cards">
-        <div class="card1"></div>
-        <div class="card2"></div>
-        <div class="card3"></div>
+        <div id="card1"></div>
+        <div id="card2"></div>
+        <div id="card3"></div>
     </div>
     <script>
         class hero {
@@ -119,14 +119,16 @@
                 return this.name + ":" + this.fact;
             }
         }
-        function showanimals() {
-            let p1 = new hero ("superman", "Did u know that superman can shoot lasers out of his eyes")
-            let p2 = new hero("spiderman", "Did you know that spiderman can shoot webs out of his hands")
-            let p3 = new animal("Iron man", "Did you know that iron man has an advanced mechsuit instead of powers")
+        function showheros() {
+            let p1 = new hero ("Superman", "Did u know that superman can shoot lasers out of his eyes")
+            let p2 = new hero("Spiderman", "Did you know that spiderman can shoot webs out of his hands")
+            let p3 = new hero("Iron man", "Did you know that iron man has an advanced mechsuit instead of powers")
 
-            document.getElementById("card1").innerHTML = "<div class='cards'> <div class='hero-name'>" + p1.name + "</div>" + "<div class='hero-fact'>" + p1.describe() + "</div></div>";
-            document.getElementById("card2").innerHTML = "<div class='cards'> <div class='hero-name'>" + p2.name + "</div>" + "<div class='hero-fact'>" + p2.describe() + "</div></div>";
+            document.getElementById("card1").innerHTML = "<div class='card'> <div class='hero-name'>" + p1.name + "</div>" + "<div class='hero-fact'>" + p1.describe() + "</div></div>";
+            document.getElementById("card2").innerHTML = "<div class='card'> <div class='hero-name'>" + p2.name + "</div>" + "<div class='hero-fact'>" + p2.describe() + "</div></div>";
+        
+            document.getElementById("card3").innerHTML = "<div class='card'> <div class='hero-name'>" + p3.name + "</div>" + "<div class='hero-fact'>" + p3.describe() + "</div></div>";
         }
-        document.getElementById("card3").innerHTML = "<div class='cards'> <div class='hero-name'>" + p3.name + "</div>" + "<div class='hero-fact'>" + p3.describe() + "</div></div>";
     </script>
 </body>
+</html>
