@@ -1,4 +1,4 @@
-var choice=("Welcome to perimeter calculator.\n It measures perimeters of diffrent shapes.The simple meaning of perimeter is all round distance of a shape \n1.Perimeter of a rectangle\n2.Perimeter of a square\n3.perimeter of a triangle");
+var choice=("Welcome to perimeter calculator. It measures perimeters of diffrent shapes.The simple meaning of perimeter is all round distance of a shape \n1.Perimeter of a rectangle\n2.Perimeter of a square\n3.perimeter of a triangle");
 
 if (choice == "1") {
     var a = prompt("Enter the length")
