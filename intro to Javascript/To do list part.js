@@ -12,7 +12,7 @@ MyForm.addEventListener("submit",
 
 function createItem(inputitems){
     var items = `<li>${inputitems}
-    <button onclick = "deleteElement(this)"> Delete </button> <li>`
+    <button onclick = "deleteElement(this)"> Delete </button> </li>`
     MyItem.insertAdjacentHTML("beforeend", items)
     MyInput.value=""
     MyInput.focus()
