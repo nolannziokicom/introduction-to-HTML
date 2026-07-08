@@ -37,15 +37,15 @@ window.onload= function(){
 
         }
 
-        if (miliseconds > 9) {
+        if (milliseconds > 9) {
             appendmilliseconds.innerHTML= milliseconds;
         }
 
-        if (milliseconds> 99){
+        if (milliseconds > 99){
             seconds ++;
             appendseconds.innerHTML= "0" + seconds
             milliseconds= 0;
-            appendmilliseconds.innerHTML= "0" + 0;
+            appendmilliseconds.innerHTML= "00"
 
         }
 
