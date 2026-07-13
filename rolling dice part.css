@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#dice {
+    font-size: 320px;
+    color: darkblue;
+}
+
+#dice:hover {
+    cursor: pointer;
+}

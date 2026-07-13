@@ -1,6 +1,6 @@
 var dice;
 var dices = ['&#9856', '&#9857','&#9858','&#9859','&#9860','&#9861;']
-var stopped= true
+var stopped= true;
 var t;
 
 function change(){
@@ -13,6 +13,14 @@ function stopstart(){
     if (stopped) {
         stopped= false;
 
-        t=setInterval(change,100)
+        t=setInterval(change,80)
+    } else {
+        clearInterval(t);
+        stopped= true;
     }
+}
+
+window.onload= function(){
+    dice= document.getElementById("dice")
+     stopstart();
 }
