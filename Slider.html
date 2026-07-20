@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple carousel</title>
+        <style>
+            body{
+                background-color: aqua;
+            }
+
+            h1 {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+                text-transform: capitalize;
+            }
+
+            .carousel-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+            }
+            .myslides{
+                display:none;
+                max-height: 100%;
+                max-width:100%;
+
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="carousel-container">
+            <h1>Endangered animals</h1>
+            <img class="myslides" src="Snow leopard.jpg" alt="slide1">
+            <img class="myslides" src="pangolin.jpg" alt="slide2">
+            <img class="myslides" src="Red panda.jpg" alt="slide3">
+            
+        </div>
+
+        <script src="slider.js"></script>
+    </body>
+</html>
