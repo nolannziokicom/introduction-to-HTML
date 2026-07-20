@@ -13,7 +13,7 @@ function slider(){
 
     }
 
-    x[index - 1].style.display="block";
+    j[index - 1].style.display="block";
 
     setTimeout(slider,2000)
 }
