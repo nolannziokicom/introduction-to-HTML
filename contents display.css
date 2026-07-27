@@ -1,6 +1,6 @@
 .pimg1,.pimg2,.pimg3{
     position: relative;
-    opacity: 0.9;
+    opacity: 0.70;
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
@@ -9,4 +9,5 @@
 
 .pimg3{
  background-image: url(mountain.jpg);
+ background-image: center;
 }
