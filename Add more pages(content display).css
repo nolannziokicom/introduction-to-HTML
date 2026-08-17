@@ -1,0 +1,23 @@
+.pimg1,
+.pimg2,
+.pimg3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+.pimg2{
+    background-image: url(mountain3.jpg);
+    background-image: left;
+    min-height:500px;
+    max-width:500px;
+}
+
+.pimg3 {
+    background-image: url(mountain.jpg);
+    background-image: right;
+    min-height: 500px;
+    min-width: 500px;
+}
